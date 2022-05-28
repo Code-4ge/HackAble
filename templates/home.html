@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <main class="flex">
+        <div id="sql" class="card">
+            <a href="/sql">
+                <i class="fa-solid fa-syringe"></i>
+                <p>SQL Injection</p>
+            </a>
+        </div>
+        <div id="xss" class="card">
+            <a href="/cross-site">
+                <i class="fa-solid fa-bug"></i>
+                <p>Cross Site Scripting</p>
+            </a>
+        </div>
+    </main>
+    
+{% endblock %}

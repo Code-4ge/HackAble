@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <main style="text-align: center;">
+        <h1 style="margin-top: 50px;">{{msg}}</h1>
+        <div class="flex">
+            <section>
+                <h2>Non Secure Form</h2><br><br>
+                <form action="/sql" method="post">
+                    <label for="user">Username : </label>
+                    <input type="text" id="user" name="user" placeholder="Username" required><br>
+                    <label for="pass">Password : </label>
+                    <input type="password" id="pass" name="pass" placeholder="Password" required><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section>
+                <h2>Secure Form</h2><br><br>
+                <form action="/secure_sql" method="post">
+                    <label for="User">Username : </label>
+                    <input type="text" id="User" name="User" placeholder="Username" required><br>
+                    <label for="Pass">Password : </label>
+                    <input type="password" id="Pass" name="Pass" placeholder="Password" required><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+{% endblock %}

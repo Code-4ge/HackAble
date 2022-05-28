@@ -1,0 +1,12 @@
+form input{
+    margin: 10px 0;
+    height: 25px;
+}
+
+form button{
+    width: 60px;
+    height: 30px;
+    background-color: brown;
+    border: none;
+    color: white;
+}
